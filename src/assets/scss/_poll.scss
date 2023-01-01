@@ -1,0 +1,117 @@
+html,
+body,
+.container-fluid {
+  background-color: $secondary;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+
+  padding: 0 60px;
+  margin-bottom: 60px;
+
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: $white;
+  background-color: $black;
+}
+
+.poll-btn-width {
+  width: 68px;
+}
+
+.poll-error {
+  padding-left: 0.75rem;
+  overflow: hidden;
+  color: $error;
+}
+
+.row {
+  height: 100%;
+}
+
+.poll-bg-white {
+  height: 100%;
+  background-color: white;
+}
+
+.poll-vertical {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .poll-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    h5 {
+      margin: 0;
+      line-height: calc(50% + 1.25em);
+    }
+  }
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+
+  .card {
+    padding: 0.375em 0.75em;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+form {
+  margin-top: 20px;
+
+  .form-check {
+    padding: 12px 0 12px 2em;
+    border-bottom: 1px solid $gray-light;
+
+    .form-check-input {
+      padding: 8px;
+    }
+  }
+}
+
+.poll__chart-option {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  border: 1px solid black;
+  overflow: hidden;
+
+  .poll__chart-label {
+    position: absolute;
+    z-index: 10;
+
+    width: 100%;
+    padding-right: 10px;
+
+    text-align: right;
+    font-size: 1.2em;
+    line-height: calc(100% + 44px);
+  }
+
+  .poll__chart-percentage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: aqua;
+  }
+}

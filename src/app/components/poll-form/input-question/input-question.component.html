@@ -1,0 +1,23 @@
+<h5 class="text-primary">Question:</h5>
+<hr />
+
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Ask Question"
+    maxlength="81"
+    [formControl]="questionForm"
+  />
+  <button
+    class="btn btn-dark poll-btn-width"
+    type="button"
+    [disabled]="questionForm.invalid"
+    (click)="onPutQuestion()"
+  >
+    Set
+  </button>
+</div>
+<div class="poll-error" *ngIf="questionForm.errors">
+  Question maybe max 80 characters long.
+</div>

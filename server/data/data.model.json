@@ -1,0 +1,16 @@
+{
+  "question": "Leukste naam?",
+  "options": [
+    { "id": 1, "option": "Noah", "votes": 10 },
+    { "id": 2, "option": "Lucas", "votes": 5 },
+    { "id": 3, "option": "Sem", "votes": 8 },
+    { "id": 4, "option": "Daan", "votes": 6 },
+    { "id": 5, "option": "Levi", "votes": 3 },
+    { "id": 6, "option": "Liam", "votes": 9 },
+    { "id": 7, "option": "James", "votes": 16 },
+    { "id": 8, "option": "Finn", "votes": 4 },
+    { "id": 9, "option": "Milan", "votes": 9 }
+  ],
+  "totalVotes": 70,
+  "totalOptions": 9
+}

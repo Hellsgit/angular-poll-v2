@@ -1,0 +1,15 @@
+<div class="p-3 pt-5 poll-bg-white poll-vertical">
+  <div class="poll-top">
+    <app-input-question></app-input-question>
+    <app-input-options></app-input-options>
+  </div>
+
+  <div class="poll-bottom">
+    <h5 class="text-primary">
+      {{ currentData.totalOptions }} of 10 posible answers
+    </h5>
+    <button class="btn btn-dark poll-btn-width" (click)="onResetOption()">
+      Reset
+    </button>
+  </div>
+</div>

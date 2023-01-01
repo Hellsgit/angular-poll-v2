@@ -1,0 +1,56 @@
+<div class="p-3 pt-5 poll-bg-white poll-vertical">
+  <div class="poll-top">
+    <div *ngIf="currentData.question; else disbableVote">
+      <h5 class="text-primary">
+        {{ currentData.question }}
+      </h5>
+    </div>
+    <hr />
+
+    <form [formGroup]="pollAnswerForm" (ngSubmit)="onSubmit()">
+      <div class="form-check" *ngFor="let item of currentData.options">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="{{ item.id }}"
+          value="{{ item.id }}"
+          name="pollAnswer"
+          formControlName="pollAnswer"
+        />
+        <label class="form-check-label" for="{{ item.id }}">{{
+          item.option
+        }}</label>
+      </div>
+      <div>
+        <div class="mt-5 mb-5 d-flex justify-content-center">
+          <button
+            class="btn btn-dark poll-btn-width"
+            type="submit"
+            [disabled]="disbableBtn"
+          >
+            Vote
+          </button>
+        </div>
+      </div>
+
+      <div
+        *ngIf="disbableMsg"
+        class="mt-1 d-flex justify-content-center text-danger"
+      >
+        Need at least two options to vote
+      </div>
+      <div
+        *ngIf="!disbableBtn && pollAnswerForm.controls['pollAnswer'].errors"
+        class="mt-1 d-flex justify-content-center text-danger"
+      >
+        Please make a choice
+      </div>
+    </form>
+  </div>
+</div>
+
+<ng-template #disbableVote>
+  <div class="mt-1 d-flex justify-content-center text-danger">
+    Please set a Question
+  </div>
+</ng-template>

@@ -1,0 +1,18 @@
+<div class="p-3 pt-5 poll-bg-white poll-vertical">
+  <div class="poll-top">
+    <h5 class="text-primary">Chart</h5>
+    <hr />
+    <div *ngFor="let item of chart">
+      <div class="poll__chart-option">
+        <span class="poll__chart-percentage" [style.width.%]="item.percentage"
+          >{{ item.percentage }}%</span
+        >
+        <span class="poll__chart-label">{{ item.label }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="poll-bottom">
+    <h5 class="text-primary">Total votes: {{ allVotes }}</h5>
+  </div>
+</div>

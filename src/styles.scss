@@ -1,0 +1,16 @@
+$blue: #184b64;
+$gray-light: #e3e3e3;
+$black: black;
+$white: white;
+$error: rgb(155, 0, 0);
+
+$primary: $blue;
+$secondary: $gray-light;
+
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$form-check-input-border-radius: 0;
+
+@import "bootstrap/scss/bootstrap";
+@import "assets/scss/index";
