@@ -40,6 +40,10 @@ Or you can copy the build /dist folder content in a public map of your server.
 
 ## Running unit tests
 
-Unfortunately not much is tested due to the lack of time.
+Unfortunately not much is tested, did configured karma.conf.js to my prefs, and installed;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- karma-mocha-reporter
+- karma-coverage-istanbul-reporter
+- jasmine-marbles
+
+Run `ng test` to execute the unit tests via that where make.
